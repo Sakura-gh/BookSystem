@@ -1,0 +1,419 @@
+/* QSS样式表 */
+QWidget#main_widget
+{
+    /* background-image: url('./img/background.jpg'); 写在这里会出问题*/
+}
+/* 设置左侧最顶端的窗口控制按钮 */
+QPushButton#left_close
+{
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    background-color: #F76677;
+    border-radius: 10px;
+}
+
+QPushButton#left_close:hover
+{
+    background-color: red;
+}
+
+QPushButton#left_visit
+{
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-width: 20px;
+    background-color: #F7D674;
+    border-radius: 10px;
+}
+
+QPushButton#left_visit:hover
+{
+    background-color: yellow;
+}
+
+QPushButton#left_mini
+{
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    background-color: #6DDF6D;
+    border-radius: 10px;
+}
+
+QPushButton#left_mini:hover
+{
+    background-color: green;
+}
+
+/* 左侧部件整体 将按钮和文字颜色设置为白色，并且将按钮的边框去掉 */
+QWidget#left_widget
+{
+    background-color:gray;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    border-left:1px solid white;
+    /* border-right:2px solid #F76677; */
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+QWidget#left_widget QPushButton
+{
+    border: none;
+    color: white;
+}
+
+QWidget#left_widget QPushButton#left_label
+{
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+QWidget#left_widget QPushButton#left_button:hover
+{
+    border-left: 4px solid red; 
+    font-weight: 700;
+}
+
+/* 右侧引导界面 */
+QWidget#right_widget
+{
+    background-image: url('./img/background.jpg');
+    /* background-color: #ffffff; */
+    border-top: 1px solid darkGray;
+    border-right:1px solid darkGray;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+/* 图书管理系统标题 */
+QWidget#right_widget QLabel#introduction
+{
+    /* qproperty-alignment: AlignCenter;
+    border: none;
+    font-size: 60px;
+    font-weight: 50000;
+    font-family: '微软雅黑';
+    color: #F76677;   */
+    background-color: #f9e8df;
+    border-radius: 10px;
+}
+
+QWidget#bookIn_widget
+{
+    /* background-color: rgba(255, 255, 225, 50%); */
+    background-color: rgba(0, 0, 0, 50%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+
+QWidget#bookIn_widget QLabel#bookInLibrary_label
+{
+    /* background-color: white; */
+    border-radius: 10px;   
+    border:2px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 50px;
+    margin-top: 20px;
+} 
+
+QWidget#singleBookIn_widget
+{
+    background-color: rgba(0, 0, 0, 80%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;   
+}
+
+QWidget#singleBookIn_title
+{
+    border-radius: 10px;   
+    border:2px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 50px;
+    /* margin-top: 150px; */
+}
+
+QWidget#singleBookIn_widget QLabel#singleBookIn_spaceLabel1
+{
+    margin-bottom: 30px;
+}
+
+QWidget#singleBookIn_widget QLabel#singleBookIn_label
+{
+    margin: 10px;
+    border-radius: 2px;   
+    border:1px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 15px;
+}
+
+QWidget#singleBookIn_widget QPushButton#singleBookIn_button
+{
+    margin-top: 20px;
+    margin-bottom:20px;    
+}
+
+QWidget#multiBookIn_widget
+{
+    background-color: rgba(0, 0, 0, 80%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;   
+}
+
+QWidget#multiBookIn_widget QLabel#multiBookIn_title
+{
+    border-radius: 10px;   
+    border:2px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 50px;
+    /* margin-top: 100px; */
+}
+
+QWidget#multiBookIn_widget QPushButton#multiBookIn_spaceLabel1
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+QWidget#multiBookIn_widget QPushButton#multiBookIn_spaceLabel2
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+QWidget#bookSearch_widget
+{
+    /* background-color: rgba(255, 255, 225, 50%); */
+    background-color: rgba(0, 0, 0, 50%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+QWidget#bookSearch_widget QLabel#bookSearch_title
+{
+    border-radius: 10px;   
+    border:2px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 50px;
+}
+
+QWidget#bookSearch_widget QLabel#bookSearch_spaceLabel1
+{
+    margin-bottom: 30px;
+}
+
+QWidget#bookSearch_widget QLabel#bookSearch_label
+{
+    margin: 10px;
+    border-radius: 2px;   
+    border:1px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 15px;
+}
+
+QWidget#bookSearch_widget QLabel#bookSearch_label_to
+{
+    margin: 10px;
+    border-radius: 2px;   
+    border:1px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 15px;
+    max-width: 25px;
+}
+
+QWidget#bookSearch_widget QLineEdit#bookSearch_edit
+{
+    max-width: 400px;
+}
+
+QWidget#bookSearch_widget QLineEdit#bookSearch_edit_two
+{
+    max-width: 120px;
+}
+
+QWidget#bookSearch_widget QPushButton#bookSearch_button
+{
+    margin-top: 20px;
+    min-height: 30px;  
+}
+
+QWidget#table_widget
+{
+    background-color: rgba(0, 0, 0, 50%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;    
+}
+
+QWidget#bookBorrow_widget
+{
+    background-color: rgba(0, 0, 0, 50%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;  
+}
+
+QWidget#bookBorrow_widget QLabel#bookBorrow_label
+{
+    margin: 10px;
+    border-radius: 2px;   
+    border:1px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 15px;
+}
+
+QWidget#bookBorrow_widget QPushButton#bookBorrow_button
+{
+    margin: 10px;
+    min-height: 30px;  
+}
+
+QWidget#bookBorrow_widget QLabel#bookBorrow_already
+{
+    margin: 10px;
+    border-radius: 5px;   
+    /* border:4px solid #F76677; */
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 20px;
+}
+
+QWidget#bookBorrow_widget QLabel#bookBorrow_title
+{
+    border-radius: 10px;   
+    border:2px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 50px;
+}
+
+QWidget#bookReturn_widget
+{
+    background-color: rgba(0, 0, 0, 50%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;  
+}
+
+QWidget#bookReturn_widget QLabel#bookReturn_label
+{
+    margin: 10px;
+    border-radius: 2px;   
+    border:1px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 15px;
+}
+
+QWidget#bookReturn_widget QPushButton#bookReturn_button
+{
+    margin: 10px;
+    min-height: 30px;  
+}
+
+QWidget#bookReturn_widget QLabel#bookBorrow_already
+{
+    margin: 10px;
+    border-radius: 5px;   
+    /* border:4px solid #F76677; */
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 20px;
+}
+
+QWidget#bookReturn_widget QLabel#bookReturn_title
+{
+    border-radius: 10px;   
+    border:2px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 50px;
+}
+
+QWidget#cardManage_widget
+{
+    background-color: rgba(0, 0, 0, 50%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;    
+}
+
+QWidget#cardManage_widget QLabel#cardManage_label
+{
+    margin: 10px;
+    border-radius: 2px;   
+    border:1px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 15px;  
+}
+
+QWidget#cardManage_widget QPushButton#cardManage_button
+{
+    margin: 10px;
+    min-height: 30px;  
+}
+
+QWidget#cardManage_widget QLabel#cardManage_title
+{
+    border-radius: 10px;   
+    border:2px solid #F76677;
+    qproperty-alignment: AlignCenter;
+    font-family: '微软雅黑';
+    color: #F76677;
+    font-size: 50px;   
+}
+
+QWidget#cardManage_widget QLabel#cardManage_spaceLabel
+{
+    margin:50px;
+}
+/* 右侧标题 */
+/* QWidget#right_widget QLabel#right_lable
+{
+    qproperty-alignment: AlignCenter;
+    border: none;
+    font-size: 20px;
+    font-weight: 50000;
+    font-family: '微软雅黑';
+    color: #F76677;
+} */
+
+/* 设置右侧的文本框 */
+/* QWidget#right_widget QTextEdit#textEdit
+{
+    border-radius: 10px;
+    padding: 2px 4px;
+    background-color: #f9e8df;
+    margin: 0 auto;
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} */

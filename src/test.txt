@@ -1,0 +1,7 @@
+(book_no_1, Computer Science, Computer Architecture, zju, 2020, A, 22.22, 16)
+(book_no_2, Computer Science, Computer Orgnization, zju, 2020, B, 45, 35)
+(book_no_3, Computer Science, ADS, zju, 2020, C, 44, 22)
+(book_no_4, math, discrete math, zju, 2005, D, 33, 29)
+(book_no_5, math, probability theory, zju, 1999, E, 23, 6)
+(book_no_5, math, probability theory, zju, 1999, ss, 9, 6)
+(book_no_6, English, standard english4, zju, 2005, F, 32, 12)
