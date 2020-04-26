@@ -29,4 +29,4 @@
     
 - 使用说明：
 
-    详见实验报告：document.md / document.pdf
+    详见实验报告：[document.md](./document.md) / [document.pdf](./document.pdf)
