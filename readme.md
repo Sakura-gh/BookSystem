@@ -30,3 +30,7 @@
 - 使用说明：
 
     详见实验报告：[document.md](./document.md) / [document.pdf](./document.pdf)
+    
+- UI概览
+
+    <img src="./img/image-20200417002317301.png" width="80%"/>
